@@ -28,14 +28,14 @@ var path = {
     src: {
         html: 'app/*.jade',
         js: 'app/js/*.js',
-        style: 'app/styles/main.sass',
+        style: 'app/styles/*.*',
         img: 'app/images/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
     watch: {
         html: 'app/**/*.jade',
         js: 'app/js/**/*.js',
-        style: 'app/styles/**/*.sass',
+        style: 'app/styles/**/*.*',
         img: 'app/images/**/*.*',
         fonts: 'app/fonts/**/*.*'
     },
