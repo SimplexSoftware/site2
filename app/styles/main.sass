@@ -1,0 +1,302 @@
+@import partials/reset 
+@import partials/sprite
+@import partials/fonts
+@import partials/mixins
+@import partials/const
+@import partials/typography
+@import partials/buttons
+@import partials/forms
+@import partials/layout
+@import partials/plugins
+
+.page-title 
+  font-size: 56px
+  line-height: 1.2
+  text-align: center
+  color: #fc682b
+  margin-bottom: 30px
+  +desktop-large
+    font-size: 48px 
+  +desktop
+    font-size: 42px 
+  +tablet
+    font-size: 36px 
+  +mobile
+    font-size: 28px
+
+.divider-grey
+  height: 3px 
+  background-color: #5d5d5d
+  margin: 25px 0
+  &--thin
+    height: 1px
+    margin-top: 15px
+
+.divider-red
+  margin-top: 15px
+  height: 1px
+  background-color: red 
+  box-shadow: 0 1px 15px #dfdfdf
+
+.jumbtrone
+  padding: 35px 0 70px
+  background: url('../images/banner-bg.jpg') 50% 0 no-repeat
+  background-size: cover
+  color: #ffffff
+  font-weight: 700
+  position: relative
+  min-height: 541px
+  +mobile
+    min-height: 350px
+
+  &__body
+    margin-left: 70px
+    max-width: 700px
+    position: absolute
+    bottom: 80px
+    +desktop
+      margin-left: 0
+
+  &__title 
+    font-size: 56px
+    line-height: 1
+    margin-bottom: 5px
+    +desktop-large
+      font-size: 50px 
+    +desktop
+      font-size: 46px 
+    +tablet
+      font-size: 36px 
+    +mobile
+      font-size: 26px
+
+  &__subtitle 
+    font-size: 30px
+    line-height: 1.2
+    +desktop-large
+      font-size: 26px
+    +desktop
+      font-size: 24px
+    +tablet
+      font-size: 22px 
+    +mobile
+      font-size: 16px
+
+
+
+.activity
+  &__image
+    text-align: center
+    margin-bottom: 10px
+
+  &__title
+    font-size: 30px 
+    line-height: 32px
+    max-width: 230px
+    margin: 0 auto 25px
+    text-align: center
+    +desktop
+      font-size: 26px
+  &__descr
+    font-size: 18px
+    line-height: 28px
+    +desktop
+      font-size: 16px
+
+  &__goal
+    font-size: 18px
+    line-height: 28px
+    +desktop
+      font-size: 16px
+
+
+.our-projects
+
+  .item
+    margin-bottom: 5px
+    &__title 
+      font-size: 18px
+
+.advantages-list
+  text-align: center
+
+.advantage
+  max-width: 210px
+  margin: 15px 85px 40px
+  text-align: center
+  display: inline-block
+  vertical-align: top
+  +desktop-large
+    margin: 15px 40px 40px
+  +desktop
+    margin: 15px 10px 40px
+  +tablet
+    margin-bottom: 20px
+  +mobile
+    max-width: 270px
+    
+  &__title
+    font-size: 24px
+    color: #fc682b
+    font-weight: 700
+    margin-bottom: 6px
+  
+  &__image
+    margin-bottom: 7px
+    min-height: 115px
+    line-height: 115px
+    +mobile
+      max-width: 90px
+      margin: 0 auto 15px
+      min-height: auto
+      line-height: 1
+
+  &__description
+    font-size: 18px
+    line-height: 25px
+
+.sign-form
+  text-align: center
+  margin-bottom: 70px
+
+  input
+    height: 44px
+    border: 1px solid #3c3c3c
+    border-radius: 10px
+    background-color: #ffffff
+    padding: 0 20px
+    font-size: 16px
+    color: #454545
+    max-width: 600px
+    width: 100%
+
+  .btn 
+    min-width: 320px
+    +mobile
+      min-width: auto
+
+.form-group
+  margin-bottom: 50px
+
+.sign-form-title
+  font-size: 18px
+  color: #fe6500
+  font-weight: 700
+  text-align: center
+  margin-bottom: 15px
+
+.logo-contacts
+  max-width: 250px
+
+
+.contacts-info
+  font-size: 14px
+  margin-bottom: 30px
+  a
+    color: #000
+    text-decoration: underline
+    &:hover, &:focus
+      text-decoration: none
+
+.page-subtitle
+  color: #b51712
+  text-align: left
+  font-size: 18px
+  margin-bottom: 20px
+  font-weight: 700
+
+.contacts-section
+  margin-bottom: 20px
+  &__item
+    padding-left: 15px 
+    line-height: 16px
+    +mobile
+      padding-left: 0
+
+
+.contacts-title
+  margin-bottom: 20px
+  color: #cf480b
+  font-weight: 700
+
+.notice
+  padding-left: 20px
+  &__title 
+    color: #b51712
+    font: bold 20px Arial, Helvetica, sans-serif
+    margin: 0 0 20px 0
+    text-align: left
+  &__text
+    font-size: 16px
+
+
+.b-technology
+
+  .title
+    color: #cf470a
+    font: 18px Arial, Helvetica, sans-serif
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 35px
+
+  &__item
+    border-top: 1px solid #f5f7f7
+    border-bottom: 1px solid #f5f7f7
+    padding: 20px 0
+    overflow: hidden
+    margin: 13px 0 0 0
+    color: #2b2332
+    +tablet
+      text-align: center
+
+  &__title 
+    float: left
+    max-width: 400px
+    margin: 10px 0 0 10px
+    +desktop-large
+      max-width: 335px
+
+    +tablet
+      float: none
+      max-width: 100%
+      margin-bottom: 25px
+
+  &__type
+    font: bold 24px Arial, Helvetica, sans-serif
+    +tablet
+      margin-bottom: 10px
+    +mobile
+      font-size: 20px
+
+  &__name
+    font-size: 24px
+    +mobile
+      font-size: 20px
+
+  &__images
+    float: right
+    margin-left: 50px
+
+    +tablet
+      float: none
+
+    img 
+      margin: 0 25px 0 0
+      +tablet        
+        margin-bottom: 10px
+        display: inline-block
+
+.portfolio-block
+  padding: 25px 0 60px
+  max-width: 850px
+
+.portfolio-section
+  margin-bottom: 20px
+  p 
+    font-size: 14px
+    line-height: 16px 
+    margin-bottom: 0
+
+  a 
+    color: blue
+  

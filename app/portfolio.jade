@@ -1,0 +1,71 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        
+        .container
+          .title-h1 
+            span.bold Разработка ПО на заказ 
+            | - основное направление деятельности компании 
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+        
+        .container
+          .portfolio-block
+            .portfolio-section
+              .page-subtitle CRM системы
+            
+              p 
+                a(href="#!").bold Simplex-CRM B2B 
+                | - простая в использовании 
+                span.bold CRM 
+                | система для продаж на В2B рынке.
+
+              p 
+                a(href="#!").bold Simplex-CRM B2C
+                | - простая в использовании 
+                span.bold CRM 
+                | система, которая доступна онлайн.
+
+              p 
+                a(href="#!").bold Cards-CRM 
+                | - Специализированная
+                span.bold CRM 
+                | система переводческой компании.
+
+              p 
+                a(href="#!").bold Simplex-CRM для юридических компаний
+                | - Специализированная
+                span.bold CRM 
+                | для юридических компаний.
+            
+            .portfolio-section
+              .page-subtitle Анализ данных
+              p 
+              span.bold Star Analizer 
+              | - Система анализа цен на рынке недвижимости и поиска целевых клиентов. Анализирует данные из открытых источников (avito.ru, irr.ru, ...)
+
+            .portfolio-section
+              .page-subtitle Открытая база недвижимости "Новые горизонты"
+              p 
+                a(href="#!").bold Новые горизонты 
+                | - Система автоматизации агентства недвижимости, включает базу по объектам недвижимости и возможность обмена информацией с другими агентствами недвижимости.
+
+            .portfolio-section
+              .page-subtitle Разработка мобильного приложения для ювелирных компаний
+              p 
+                | Для клиентов сервиса 
+                a(href="#!") Золотое облако 
+                | мы разрабатываем мобильное приложение - программа лояльности для ювелирных магазинов.
+            
+    //= template/footer.jade
+
+    //= template/scripts.jade

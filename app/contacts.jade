@@ -1,0 +1,57 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+
+
+      section.middle
+        
+        .container
+          .title-h1 
+            span.bold Разработка ПО на заказ 
+            | - основное направление деятельности компании 
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+
+        .container
+          .row
+            .col-sm-6.col-md-5.col-md-offset-1
+              .contacts-info
+                span Симплекс Софтвер
+                .page-subtitle Контакты:
+                
+                .contacts-section
+                  .contacts-title Генеральный директор:
+                  div.contacts-section__item Ржевский Дмитрий Валерьевич
+                  div.contacts-section__item Е-mail: 
+                    a(href="mailto:info@simplex-software.ru") info@simplex-software.ru
+                  div.contacts-section__item Телефон: +7(926)426-55-55
+
+                .contacts-section
+                  .contacts-title Юридический адрес:
+                  div.contacts-section__item Москва, ул. Воронежская, д. 28, к.1
+
+                .contacts-section
+                  .contacts-title Фактический адрес:
+                  div.contacts-section__item Москва, Смоленский бульвар, дом 17, корпус 6
+
+                .logo-contacts
+                  img(src="images/logo-footer.png", alt="logo")
+
+
+            .col-sm-6
+              .map
+                script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae28f8ddbd665a1c6b5557fee745008dd3cef844ddd0e8829e267e957a1c2751e&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
+          
+
+          
+    //= template/footer.jade
+
+    //= template/scripts.jade

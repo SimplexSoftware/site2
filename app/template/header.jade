@@ -1,0 +1,30 @@
+header.header
+  .container
+    nav.navbar.navbar-default(role='navigation')
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+
+        .header-info
+          .header-info__phone-number
+            a(href="tel:+7(926)426-55-55") +7(926)426-55-55
+          .header-info__mail
+            a(href="mailto:info@simplex-software.ru") info@simplex-software.ru
+
+      // Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        ul.nav.navbar-nav(itemscope itemtype="http://schema.org/SiteNavigationElement")
+          li.active(itemprop="name")
+            a(href='#' itemprop="url") О компании
+          li(itemprop="name")
+            a(href='#' itemprop="url") Портфолио
+          li(itemprop="name")
+            a(href='#' itemprop="url") Технологии
+          li(itemprop="name")
+            a(href='#' itemprop="url") Контакты
+
+  // container end
+// header

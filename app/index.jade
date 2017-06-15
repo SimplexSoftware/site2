@@ -1,0 +1,121 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle.middle-index
+        
+        .jumbtrone
+          .container
+            .logo
+              a(href="#!")
+                img(src="images/logo.png", alt="logo")
+            
+            .jumbtrone__body
+              .jumbtrone__title Разработка ПО на заказ
+              .jumbtrone__subtitle основное направление деятельности компании Simplex Software
+        // jumbtrone end
+        .container
+          .what-we-do
+            .page-title Что мы делаем
+            
+            .row
+              .col-sm-6
+                .activity
+                  .activity__image
+                    img(src="images/what-do-icon-1.png", alt="what-we-do")
+                  .activity__title Автоматизация малого бизнеса
+                  .activity__descr crm и erp
+                  .activity__goal Задачи: увеличенике прибыли, уменьшение затрат.
+                  a(href="#!") далее
+              .col-sm-6
+                .activity
+                  .activity__image
+                    img(src="images/what-do-icon-2.png", alt="what-we-do")
+                  .activity__title Стартапы
+                  .activity__descr Создание порталов и сервисов. Мобильные приложения
+                  .activity__goal Задачи: Создание высоко прибыльного бизнеса с 0
+                  a(href="#!") далее 
+          // what-we-do end
+          .divider-grey
+
+          .our-projects
+            .page-title Некоторые наши проекты
+            .row
+              .col-sm-6
+                .item
+                  .item__title База недвижимости «Новые горизонты»
+                  a(href="#!") далее
+              .col-sm-6
+                .item
+                  .item__title Talksift (дискуссионный форум)
+                  a(href="#!") далее
+              .col-sm-6
+                .item
+                  .item__title Агентство недвижимости «AllMoscowRealty»
+                  a(href="#!") далее
+              .col-sm-6
+                .item
+                  .item__title Мобильное приложение для сервиса «Золотое Облако»
+                  a(href="#!") далее
+          // our-projects end
+
+          .divider-grey
+
+          .our-advantages
+            .page-title Наши преимущества
+            .advantages-list
+             
+              .advantage
+                .advantage__image
+                  img(src="images/advantage-icon-1.png", alt="advantage-icon")
+                .advantage__title Гибкость
+                .advantage__description мы поможем подобрать Вам решения подходлящие по цене и функционалу
+                a(href="#!") подробнее
+
+              .advantage
+                .advantage__image
+                  img(src="images/advantage-icon-2.png", alt="advantage-icon")
+                .advantage__title Прозрачность
+                .advantage__description работы с нами: в компании реализована система управления проектами
+                a(href="#!") подробнее
+
+              .advantage
+                .advantage__image
+                  img(src="images/advantage-icon-3.png", alt="advantage-icon")
+                .advantage__title Передача артефактов
+                .advantage__description разработки: Исходный код  + пакет документаци
+                a(href="#!") подробнее
+
+              .advantage
+                .advantage__image
+                  img(src="images/advantage-icon-4.png", alt="advantage-icon")
+                .advantage__title Без бюрократии
+                .advantage__description в отличие от крупных компаний, всё решается более оперативно
+                a(href="#!") подробнее
+
+              .advantage
+                .advantage__image
+                  img(src="images/advantage-icon-5.png", alt="advantage-icon")
+                .advantage__title Мы всегда на связи!
+                .advantage__description Поддержка готового проекта 
+                a(href="#!") подробнее
+          // our-advantages end
+
+          .divider-grey
+
+          form.sign-form
+            .sign-form-title История успеха:  Подпишитесь на  серию писем с историями успеха  наших клиентов. 
+            .form-group
+              input(type="email" placeholder="e-mail")
+            button(type="submit").btn Подписатся
+          // sign-form end
+          
+    //= template/footer.jade
+
+    //= template/scripts.jade

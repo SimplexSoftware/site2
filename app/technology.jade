@@ -1,0 +1,85 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+        
+        .container
+          .title-h1 
+            span.bold Разработка ПО на заказ 
+            | - основное направление деятельности компании 
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+        
+        .container
+          .notice
+            h2.notice__title Используемые технологии
+            p.notice__text Не секрет, что успешность реализации проекта (особенно это актуально в условиях, когда нужно уложиться в ограниченный бюджет и сроки) зависит от правильного выбора технологий. Выбор технологии происходит на стадии проектирования.
+          
+          .b-technology
+            .title СЕРВЕРНЫЕ ТЕХНОЛОГИИ:
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Реляционные базы данных:
+                .b-technology__name Oracle, Postgresql, Mysql
+
+              .b-technology__images
+                img( src="images/logo_teh1.jpg", alt="img")
+                img( src="images/logo_teh2.jpg", alt="img")
+                img( src="images/logo_teh3.jpg", alt="img")
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Не реляционные базы данных:
+                .b-technology__name Hadoop, Cassandra
+
+              .b-technology__images
+                img( src="images/logo_teh4.jpg", alt="img")
+                img( src="images/logo_teh5.jpg", alt="img")
+                
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Языки программирования:
+                .b-technology__name Java, Javascript, Scala
+
+              .b-technology__images
+                img( src="images/logo_teh6.jpg", alt="img")
+                img( src="images/logo_teh7.jpg", alt="img")
+                img( src="images/logo_teh8.jpg", alt="img")
+                
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Фреймворки:
+                .b-technology__name Spring, Hibernate, JDO, Zkoss, GWT, Wicket, EJB
+
+              .b-technology__images
+                img( src="images/logo_teh9.jpg", alt="img")
+                img( src="images/logo_teh10.jpg", alt="img")
+                img( src="images/logo_teh11.jpg", alt="img")
+                img( src="images/logo_teh12.jpg", alt="img")
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Другие технологии:
+                .b-technology__name Html, Javascript, Xml, веб сервисы
+
+              .b-technology__images
+                img( src="images/logo_teh13.jpg", alt="img")
+                img( src="images/logo_teh14.jpg", alt="img")
+                img( src="images/logo_teh15.jpg", alt="img")
+                img( src="images/logo_teh16.jpg", alt="img")
+
+
+    //= template/footer.jade
+
+    //= template/scripts.jade

@@ -1,0 +1,50 @@
+@import mixins
+@import const
+@import sprite
+
+/*----------- Form sryle *
+ ------------------------------------------------------------*/
+
+.placeholder 
+  color: #222222 
+
+*:focus::-moz-placeholder 
+  color: transparent !important 
+
+*[autofocus]::-moz-placeholder:focus 
+  color: #000!important 
+
+*:focus:-moz-placeholder 
+  color: transparent !important 
+
+*[autofocus]:-moz-placeholder:focus 
+  color: #000!important 
+
+*:focus::-webkit-input-placeholder 
+  color: transparent !important 
+
+*[autofocus]::-webkit-input-placeholder 
+  color: #000!important 
+
+input, textarea
+  +placeholder-color(#454545)
+  +border-radius(0px)
+  padding: 0 20px
+  width: 100%
+  height: 50px
+  position: relative
+  outline: none
+  font: 14px $site-font-family
+  color: #000
+  background-color: #fff
+  border: 1px solid #e0e0e0
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+textarea
+  height: 140px
+  vertical-align: top
+  padding: 15px 20px
+  resize: none
+
+
