@@ -1,0 +1,47 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+
+        .container
+          .title-h1
+            span.bold Разработка ПО на заказ
+            | - основное направление деятельности компании
+            = " "
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+
+        .container
+          article.text.crm-b2c
+            h2.red.bold.align-left Simplex-CRM B2C
+            p <strong>Simplex-CRM B2C</strong> - простая в использовании <strong>CRM</strong> система, которая доступна онлайн. Используется в небольших компаниях для улучшения взаимодействия с клиентами. Легко обучить персонал, легка во внедрении. В тоже время есть возможности настройки под конкретного пользователя без доработок программистами.
+
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Simplex-CRM B2C", href="images/screen1.jpg")
+              img.block-center(src="images/screen1.jpg", width="80%" alt="Simplex-CRM B2C, client", title="Simplex-CRM B2C, client")
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Simplex-CRM B2C", href="images/screen2.jpg")
+              img.block-center(src="images/screen2.jpg", width="80%" alt="Simplex-CRM B2C, client", title="Simplex-CRM B2C, client")
+            .half-block.block-center.base-margin-bottom
+              .left
+                a(data-lightbox="screenshot", data-title="Simplex-CRM B2C", href="images/screen3.jpg")
+                  img.block-center(src="images/screen3.jpg", width="100%" alt="Simplex-CRM B2C, client", title="Simplex-CRM B2C, client")
+              .right
+                .examples
+                  .examples_title.red.bold Примеры где используется:
+                  ul
+                    li - Врачи остеопаты
+                    li - Тренинговые центры и консультации
+                p.bold Возможна доработка системы под Ваши бизнес процессы.
+
+
+
+    //= template/footer.jade
+
+    //= template/scripts.jade

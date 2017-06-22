@@ -1,0 +1,35 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+
+        .container
+          .title-h1
+            span.bold Разработка ПО на заказ
+            | - основное направление деятельности компании
+            = " "
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+
+        .container
+          article.text.cards-crm
+            h2.red.bold.align-left Cards-CRM
+            p Специализированная CRM система для компании <a href="http://www.longfield.ru/">Лингвострах</a> занимающихся языковым переводом для туристов. Создана с учётом наработок по Simplex-CRM. В бизнес процессах компании используются скретч-карты.
+
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Cards CRM", href="images/screen4.jpg")
+              img.block-center(src="images/screen4.jpg", width="80%" alt="Cards CRM, client", title="Cards CRM, client")
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Cards CRM", href="images/screen5.jpg")
+              img.block-center(src="images/screen5.jpg", width="80%" alt="Cards CRM, client", title="Cards CRM, client")
+
+
+    //= template/footer.jade
+
+    //= template/scripts.jade
