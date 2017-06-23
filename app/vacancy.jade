@@ -1,0 +1,54 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+
+        .container
+          .title-h1
+            span.bold Разработка ПО на заказ
+            | - основное направление деятельности компании
+            = " "
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+
+        .container
+          article.text.vacancy
+            h2.red.bold.align-center.str-to-uppercase Вакансии
+
+            article.vacancy-item
+              .vacancy_title Младший Java - программист
+              .vacancy_subtitle Требования
+              ul.squared-list
+                li Желание обучаться и быстрая обучаемость
+                li Хорошее знание языка Java, Collection API
+                li Основы Maven
+                li XML, XML API
+              .vacancy_subtitle Пожелания
+              ul.squared-list
+                li SQL, JDBC, Hibernate/JPA
+                li Servlet API, Spring Framework
+                li JSP, Wicket, ZK
+                li HTML, JavaScript
+                li Опыт разработки приложений под андроид, ios
+              .vacancy_subtitle Условия работы
+              ul.squared-list
+                li 40 часовая рабочая неделя. Для студентов возможен гибкий график работы.
+                li Хорошие возможности для обучения и карьерного роста.
+                li Без бюрократии. Все вопросы решаются сразу.
+                li В офисе чай и плюшки
+                li Расположение: смоленский бульвар д. 17 стр 6 (ближайшее метро Смоленская)
+              .vacancy_contact Присылайте резюме на <a class="email" href="mailto:info@simplex-software.ru">info@simplex-software.ru</a>
+
+
+
+    //= template/footer.jade
+
+    //= template/scripts.jade
