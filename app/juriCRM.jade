@@ -1,0 +1,48 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+
+        .container
+          .title-h1
+            span.bold Разработка ПО на заказ
+            | - основное направление деятельности компании
+            = " "
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+
+        .container
+          article.text.juri-crm
+            h2.red.bold.align-center.str-to-uppercase SIMPLEX-CRM ДЛЯ ЮРИДИЧЕСКИХ КОМПАНИЙ
+            p Наша компания занимается разработкой систем для юридических компаний на основе Simplex-CRM. Система устанавливается на сервер компании и доступна онлайн.
+            h4.bold Данная система позволит:
+            ul.squared-list
+              li Собирать и хранить информацию о клиенте и историю взаимоотношений с ним
+              li Ставить задачи сотрудникам
+              li Создавать документы по шаблонам, хранить их на сервере
+              li Отслеживать движение дела в суде и получать напоминания о предстоящих делах
+              li Автоматизация юридической компании позволяет сократить издержки и повысить качество обслуживания
+            p Для получения подробностей звоните +7(926)426-55-55 или пишите  нам: <a class="email" href="mailto:info@simplex-crm.ru">info@simplex-crm.ru</a>
+            p Примеры скриншотов разрабатываемых продуктов:
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Консультация клиента", href="images/clientCard1.png")
+              img.block-center(src="images/clientCard1.png", width="80%" alt="Консультация клиента")
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Ход дела", href="images/causaList.png")
+              img.block-center(src="images/causaList.png", width="80%" alt="Ход дела")
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Клиент - юридическое лицо", href="images/juricrmLegalPerson.png")
+              img.block-center(src="images/juricrmLegalPerson.png", width="80%" alt="Клиент - юридическое лицо")
+
+
+
+
+
+    //= template/footer.jade
+
+    //= template/scripts.jade

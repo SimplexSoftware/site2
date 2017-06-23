@@ -1,0 +1,44 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle
+
+        .container
+          .title-h1
+            span.bold Разработка ПО на заказ
+            | - основное направление деятельности компании
+            = " "
+            span.red.bold Simplex Software
+
+        .divider-grey.divider-grey--thin
+
+        .container
+          article.text.crm-b2b
+            h2.red.bold.align-left Simplex-CRM B2B
+            p <strong>Simplex-CRM B2B</strong> - простая в использовании <strong>CRM</strong> система, которая устанавливается на сервер компании и доступна онлайн через браузер. Используется в небольших компаниях для улучшения взаимодействия с клиентами - юридическими лицами. Легко обучить персонал, легка во внедрении. Отчёты для контроля работы менеджеров.
+            p Позволяет сократить затраты не покупая серверные лицензии более крупных поставщиков.
+
+            div.base-margin-bottom: a(data-lightbox="screenshot", data-title="Simplex-CRM B2B", href="images/screen6.jpg")
+              img.block-center(src="images/screen6.jpg", width="80%" alt="Simplex-CRM B2B, client", title="Simplex-CRM B2B, client")
+
+            p Система поставляется по лицензии с
+              a(href="https://github.com/dmrzh/simplex-crm-b2b", title="simplex crm b2b на github")  открытым исходным кодом
+              | .
+            p.bold Возможна доработка системы под Ваши бизнес процессы.
+            .examples.float-right
+              .examples_title.red.bold Клиенты
+              ul
+                li Компания Итал Тулс, продажа иструментов для мебельных фабрик
+
+
+
+    //= template/footer.jade
+
+    //= template/scripts.jade

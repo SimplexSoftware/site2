@@ -1,4 +1,4 @@
-@import partials/reset 
+@import partials/reset
 @import partials/sprite
 @import partials/fonts
 @import partials/mixins
@@ -9,23 +9,23 @@
 @import partials/layout
 @import partials/plugins
 
-.page-title 
+.page-title
   font-size: 56px
   line-height: 1.2
   text-align: center
   color: #fc682b
   margin-bottom: 30px
   +desktop-large
-    font-size: 48px 
+    font-size: 48px
   +desktop
-    font-size: 42px 
+    font-size: 42px
   +tablet
-    font-size: 36px 
+    font-size: 36px
   +mobile
     font-size: 28px
 
 .divider-grey
-  height: 3px 
+  height: 3px
   background-color: #5d5d5d
   margin: 25px 0
   &--thin
@@ -35,7 +35,7 @@
 .divider-red
   margin-top: 15px
   height: 1px
-  background-color: red 
+  background-color: red
   box-shadow: 0 1px 15px #dfdfdf
 
 .jumbtrone
@@ -57,20 +57,20 @@
     +desktop
       margin-left: 0
 
-  &__title 
+  &__title
     font-size: 56px
     line-height: 1
     margin-bottom: 5px
     +desktop-large
-      font-size: 50px 
+      font-size: 50px
     +desktop
-      font-size: 46px 
+      font-size: 46px
     +tablet
-      font-size: 36px 
+      font-size: 36px
     +mobile
       font-size: 26px
 
-  &__subtitle 
+  &__subtitle
     font-size: 30px
     line-height: 1.2
     +desktop-large
@@ -78,11 +78,9 @@
     +desktop
       font-size: 24px
     +tablet
-      font-size: 22px 
+      font-size: 22px
     +mobile
       font-size: 16px
-
-
 
 .activity
   &__image
@@ -90,7 +88,7 @@
     margin-bottom: 10px
 
   &__title
-    font-size: 30px 
+    font-size: 30px
     line-height: 32px
     max-width: 230px
     margin: 0 auto 25px
@@ -109,12 +107,11 @@
     +desktop
       font-size: 16px
 
-
 .our-projects
 
   .item
     margin-bottom: 5px
-    &__title 
+    &__title
       font-size: 18px
 
 .advantages-list
@@ -134,13 +131,13 @@
     margin-bottom: 20px
   +mobile
     max-width: 270px
-    
+
   &__title
     font-size: 24px
     color: #fc682b
     font-weight: 700
     margin-bottom: 6px
-  
+
   &__image
     margin-bottom: 7px
     min-height: 115px
@@ -170,7 +167,7 @@
     max-width: 600px
     width: 100%
 
-  .btn 
+  .btn
     min-width: 320px
     +mobile
       min-width: auto
@@ -187,7 +184,6 @@
 
 .logo-contacts
   max-width: 250px
-
 
 .contacts-info
   font-size: 14px
@@ -208,11 +204,10 @@
 .contacts-section
   margin-bottom: 20px
   &__item
-    padding-left: 15px 
+    padding-left: 15px
     line-height: 16px
     +mobile
       padding-left: 0
-
 
 .contacts-title
   margin-bottom: 20px
@@ -221,14 +216,13 @@
 
 .notice
   padding-left: 20px
-  &__title 
+  &__title
     color: #b51712
     font: bold 20px Arial, Helvetica, sans-serif
     margin: 0 0 20px 0
     text-align: left
   &__text
     font-size: 16px
-
 
 .b-technology
 
@@ -249,7 +243,7 @@
     +tablet
       text-align: center
 
-  &__title 
+  &__title
     float: left
     max-width: 400px
     margin: 10px 0 0 10px
@@ -280,9 +274,9 @@
     +tablet
       float: none
 
-    img 
+    img
       margin: 0 25px 0 0
-      +tablet        
+      +tablet
         margin-bottom: 10px
         display: inline-block
 
@@ -292,11 +286,118 @@
 
 .portfolio-section
   margin-bottom: 20px
-  p 
+  p
     font-size: 14px
-    line-height: 16px 
+    line-height: 16px
     margin-bottom: 0
 
-  a 
+  a
     color: blue
-  
+
+.align
+  &-left
+    text-align: left
+  &-right
+    text-align: right
+  &-center
+    text-align: center
+
+.float
+  &-right
+    float: right
+  &-left
+    float: left
+
+strong
+  font-weight: 700
+
+.block-center
+  display: block
+  margin-left: auto
+  margin-right: auto
+
+.base-margin-bottom
+  margin-bottom: 20px
+
+.examples
+  &_title
+    font-size: 18px
+    margin-bottom: 8px
+  ul
+    margin-left: 10px
+    li
+      font-size: 14px
+      font-style: italic
+
+.half-block
+  overflow: hidden
+  .left
+    width: 45%
+    margin-right: 10%
+    float: left
+  .right
+    margin-top: 60px
+    float: left
+    width: 45%
+
+.crm-b2c, .cards-crm, .crm-b2b, .juri-crm
+  @media screen and (max-width: 747px)
+    img.block-center
+      width: 100%
+  .half-block
+    width: 80%
+    @media screen and (max-width: 747px)
+      width: 100%
+    @media screen and (max-width: 650px)
+      .left
+        margin-right: 4%
+      .right
+        width: 50%
+    @media screen and (max-width: 560px)
+      .left, .right
+        float: none
+        width: 100%
+      .left
+        margin-right: 0
+        margin-bottom: 20px
+
+.str-to-uppercase
+  text-transform: uppercase
+
+.vacancy-item
+  width: 100%
+  margin: 40px auto 20px
+  max-width: 747px
+  .vacancy_title
+    font-size: 18px
+    font-weight: 700
+    text-align: center
+    margin-bottom: 15px
+  .vacancy_subtitle
+    font-size: 17px
+    margin-bottom: 4px
+
+.squared-list
+  li
+    font-size: 18px
+    font-style: italic
+    margin-bottom: 5px
+
+    &::before
+      content: ''
+      display: inline-block
+      height: 10px
+      width: 10px
+      background-color: #fc682b
+      vertical-align: middle
+      margin-right: 12px
+      box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, .2)
+
+.juri-crm
+  margin-left: auto
+  margin-right: auto
+  width: 100%
+  max-width: 840px
+  h4
+    font-size: 19px
+    margin-top: 30px
