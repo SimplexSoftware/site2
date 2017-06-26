@@ -27,6 +27,7 @@ var path = {
     },
     src: {
         html: 'app/*.jade',
+	xml: 'app/*.xml',
         js: 'app/js/*.js',
         style: 'app/styles/*.*',
         img: 'app/images/**/*.*',
