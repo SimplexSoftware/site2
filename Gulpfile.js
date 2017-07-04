@@ -20,6 +20,7 @@ var gulp = require('gulp'),
 var path = {
     build: {
         html: 'build/',
+	rawhtml: 'build/',
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/images/',
@@ -28,6 +29,7 @@ var path = {
     src: {
         html: 'app/*.jade',
 	xml: 'app/*.xml',
+	rawhtml: 'app/*.html',
         js: 'app/js/*.js',
         style: 'app/styles/*.*',
         img: 'app/images/**/*.*',
