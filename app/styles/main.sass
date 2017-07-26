@@ -401,3 +401,196 @@ strong
   h4
     font-size: 19px
     margin-top: 30px
+
+//23.07.2017
+
+body
+  background-image: url("../images/page-bg.jpg")
+  background-repeat: repeat
+
+.for-startup
+  padding-top: 2em
+  font-size: 1rem
+  margin-left: auto
+  margin-right: auto
+  max-width: 83.125em
+  &__image
+    display: block
+    width: 28.125em
+    margin-bottom: 2em
+    margin-left: auto
+    margin-right: auto
+  &__title
+    font-size: 3em
+    color: #ff6633
+    text-transform: uppercase
+    text-align: center
+    font-family: Helvetica, serif
+    line-height: 1.1
+    padding-bottom: .4em
+    border-bottom: 3px #5d5d5d solid
+  &__forward
+    color: #333333
+    font-size: 3em
+    text-align: center
+    line-height: 1.3
+    padding-bottom: .4em
+    border-bottom: 3px #5d5d5d solid
+    font-family: Helvetica, serif
+  @media screen and (max-width: 1170px)
+    font-size: .9rem
+  @media screen and (max-width: 1020px)
+    font-size: .75rem
+    &__forward
+      font-size: 2em
+      line-height: 1.15
+  @media screen and (max-width: 414px)
+    font-size: .65rem
+
+
+.text-block
+  padding-top: 1.875em
+  padding-bottom: 1.25em
+  border-bottom: 3px #5d5d5d solid
+  &:last-of-type
+    border-bottom: 0
+  &__title
+    font-size: 1.625em
+    font-weight: 700
+    font-family: Helvetica, serif
+    text-align: center
+    line-height: 1.1
+    margin-bottom: 1em
+    color: #000
+    br 
+      line-height: 1.5
+    &_big
+      font-size: 1.875em
+      color: #333
+  &__text
+    font-size: 1.3625em
+    color: #000
+    line-height: 1.4
+    &_caption
+      text-align: center
+      text-indent: none
+    p
+      text-indent: 2em  
+      margin-bottom: 1em
+  &__img
+    display: block
+    width: 30em
+    max-width: 100%
+    height: auto
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 1.4em
+
+.subscribe-form
+  text-align: center
+  box-sizing: border-box
+  background-image: url("../images/form-bg.jpg")
+  background-position: 50% 50%
+  background-repeat: repeat
+  background-size: cover 
+  width: 100%
+  padding: 6.25em 1.5em 4.375em
+  &__title
+    font-size: 1.125em
+    color: #ffffff
+    font-weight: 700
+    font-family: Arial, serif
+    margin-bottom: 1em
+  &__email
+    max-width: 37.5em
+    width: 100%
+    height: 2.875em
+    line-height: 2.875em
+    box-sizing: border-box
+    border: 1px solid #3c3c3c
+    border-radius: 10px
+    margin-bottom: 2.125em
+  &__submit
+    text-align: center
+    font-size: 1.5em
+    font-weight: 700
+    color: #ffffff
+    border-radius: 10px
+    background-color: #484848
+    border: 0
+    display: block
+    padding: 0.5em 1.25em
+    max-width: 9.5em
+    margin-left: auto
+    margin-right: auto
+    transition: background-color .25s ease
+    &:hover 
+      background-color: #606060
+  @media screen and (max-width: 768px)
+    padding-top: 2.7em
+    padding-bottom: 2em
+  @media screen and (max-width: 480px)
+    font-size: .80rem
+
+.our-advantages
+  font-size: 1rem
+  padding: 3.125em 2em
+  margin-left: auto 
+  margin-right: auto
+  max-width: 83.125em
+  &__title
+    font-size: 4.5em
+    line-height: 1.1
+    color: #ff6633
+    padding-bottom: .5em
+    border-bottom: 3px solid #5d5d5d
+    margin-bottom: .4em
+  @media screen and (max-width: 1320px)
+    font-size: .75rem
+  @media screen and (max-width: 1020px)
+    font-size: .7rem
+  @media screen and (max-width: 768px)
+    &__title
+      font-size: 3em
+
+.our-advantages__list
+  font-size: 1rem
+  @media screen and (max-width: 1320px)
+    font-size: .85rem
+  @media screen and (max-width: 1020px)
+    font-size: .75rem
+  @media screen and (max-width: 768px)
+    font-size: .65rem
+
+.our-advantages-item
+  border-bottom: 3px #333 solid
+  margin-bottom: 2em
+  &:last-of-type
+    border-bottom: 0
+  &__title
+    font-size: 2.25em
+    text-align: center
+    color: #333333
+    font-family: Helvetica, sans-serif
+  &__image
+    max-width: 100%
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 12em
+    height: auto
+    margin-bottom: 1em
+  &__subtitle
+    font-size: 1.875em
+    color: #333
+    font-family: Helvetica, sans-serif
+    line-height: 1.1
+    text-align: center
+    margin-bottom: 1.35em
+    br
+      line-height: 1.5
+  &__text
+    color: #333333
+    font-size: 1.5em
+    p
+      margin-bottom: 1em
