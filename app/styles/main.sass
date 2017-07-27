@@ -594,3 +594,71 @@ body
     font-size: 1.5em
     p
       margin-bottom: 1em
+
+
+.sign-form-title
+  margin-bottom: 32px
+
+.methodology
+  font-size: 1rem
+  padding-top: 2em
+  padding-bottom: 2em
+  &__title
+    font-size: 3em
+    line-height: 1.1
+    color: #ff6633
+    padding-bottom: .5em
+    border-bottom: 3px solid #5d5d5d
+    margin-bottom: .6em
+  &__main-img
+    display: block
+    width: 100%
+    height: auto
+    max-width: 46.75em
+    margin-left: auto
+    margin-right: auto
+    margin-bottom: 3.75em
+    border-radius: 18px
+  @media screen and (max-width: 1320px)
+    font-size: .85rem
+  @media screen and (max-width: 1020px)
+    &__title
+      font-size: 2.2em
+    &__main-img
+      max-width: 32em
+
+.methodology-types
+  border-bottom: 3px solid #5d5d5d
+  &:last-of-type
+    border-bottom: 0
+  &__title, &__subtitle
+    font-size: 3em
+    font-family: Helvetica, serif
+    color: #ff6633
+  &__row
+    border-bottom: 3px solid #5d5d5d
+    &:last-of-type
+      border-bottom: 0
+  &__title
+    text-align: left
+  &__row
+    clear: both
+    padding-top: 2.5em
+    padding-bottom: 2em
+  &__subtitle
+    margin-bottom: .8em
+  @media screen and (max-width: 1020px)
+    &__title, &__subtitle
+      font-size: 1.9em
+    &__row
+      padding-top: 1.4em
+      padding-bottom: 1.2em
+  @media screen and (max-width: 768px)
+    &__img
+      display: none
+  @media screen and (max-width: 414px)
+    &__title, &__subtitle
+      font-size: 1.5em
+    &__row
+      padding-top: .8em
+      padding-bottom: .6em
