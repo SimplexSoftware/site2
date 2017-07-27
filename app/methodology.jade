@@ -1,0 +1,54 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle.middle-index
+        
+        .jumbtrone
+          .container
+            .logo
+              a(href="#!")
+                img(src="images/logo.png", alt="logo")
+            
+            .jumbtrone__body
+              .jumbtrone__title Разработка ПО на заказ
+              .jumbtrone__subtitle основное направление деятельности компании Simplex Software
+        // jumbtrone end
+        .container
+          .methodology
+            h1.methodology__title Программное обеспечение для автоматизации бизнеса
+            img.methodology__main-img(src="images/methodology-1.jpg", alt="Программное обеспечение для автоматизации бизнеса")
+            .methodology__types.methodology-types
+              .row
+                h4.methodology-types__title.col-xs-7 Гибкие методологии
+                h4.methodology-types__title.col-xs-5 Разработка по ТЗ
+              .methodology-types__row.row
+                .methodology-types__subtitle.align-center.col-xs-12 Применяется когда:
+                .methodology-types__left.col-sm-5.col-xs-6 - Вы не знаете в детали как должно выглядеть приложение <br>- Требования создаются в процессе эксплуатации
+                .col-sm-2.col-xs-0
+                  img.methodology-types__img(src="images/methodology-2.jpg", alt="Применяется когда")
+                .methodology-types__right.col-sm-5.col-xs-6 - Когда требования к продукту заранее известны (есть возможность выяснить аналитиком)<br>- Продукт сделанный частично бесполезен совсем. <br>- Трудозатраты на разработку продукта значительно больше чем на дальнейшую доработку/поддержку
+              .methodology-types__row.row
+                .methodology-types__subtitle.col-xs-12.align-center Плюсы:
+                .methodology-types__left.col-sm-5.col-xs-6 -  Возможно добавление функционала к уже работающей программе <br>- Только нужная и важная функциональность. Функционал "чтобы было на всякий случай" не делается или делается в последнюю очередь.
+                .col-sm-2.col-xs-0
+                  img.methodology-types__img(src="images/methodology-3.png", alt="Применяется когда")
+                .methodology-types__right.col-sm-5.col-xs-6 - Заранее известен бюджет и сроки <br>- Все технические риски - на компании-разработчике. <br>- Имея хорошо написанное ТЗ можно выбирать исполнителя больше полагаясь на цену. 
+              .methodology-types__row.row
+                .methodology-types__subtitle.col-xs-12.align-center Минусы:
+                .methodology-types__left.col-sm-5.col-xs-6  - Точно не известно сколько потребуется денег на создание продукта. <br>- Возможно будет выбран не самый оптимальный путь реализации. <br>- На заказчике ложатся дополнительные технические риски.
+                .col-sm-2.col-xs-0
+                  img.methodology-types__img(src="images/methodology-4.png", alt="Применяется когда")
+                .methodology-types__right.col-sm-5.col-xs-6 - Дополнительные расходы на написание и согласование ТЗ <br>- Иногда продумать всё до мелочей занимает много времени заказчика. 
+
+          
+    //= template/footer.jade
+
+    //= template/scripts.jade

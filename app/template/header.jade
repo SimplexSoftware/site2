@@ -17,13 +17,13 @@ header.header
       // Collect the nav links, forms, and other content for toggling
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         ul.nav.navbar-nav(itemscope itemtype="http://schema.org/SiteNavigationElement")
-          li.active(itemprop="name")
+          li(itemprop="name" data-menu="index")
             a(href='/' itemprop="url") О компании
-          li(itemprop="name")
+          li(itemprop="name" data-menu="portfolio")
             a(href='portfolio.html' itemprop="url") Портфолио
-          li(itemprop="name")
+          li(itemprop="name" data-menu="technology")
             a(href='technology.html' itemprop="url") Технологии
-          li(itemprop="name")
+          li(itemprop="name" data-menu="contacts")
             a(href='contacts.html' itemprop="url") Контакты
 
   // container end
