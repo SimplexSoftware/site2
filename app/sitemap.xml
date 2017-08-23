@@ -50,4 +50,8 @@
         <loc>http://www.simplex-software.ru/site-development.html</loc>
         <changefreq>weekly</changefreq>
     </url>
+        <url>
+        <loc>http://www.simplex-software.ru/advantages.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
 </urlset>
