@@ -3,71 +3,122 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 
   //= template/head.jade
 
-  body(data-menu="portfolio")
+
+  body
     #wrapper
 
       //= template/header.jade
 
-      section.middle
+      section.middle.middle-index
         
+        .jumbtrone
+          .container
+            .logo
+              a(href="#!")
+                img(src="images/logo.png", alt="logo")
+            
+            .jumbtrone__body
+              .jumbtrone__title Разработка ПО на заказ
+              .jumbtrone__subtitle основное направление деятельности компании Simplex Software
+        // jumbtrone end
         .container
-          .title-h1 
-            span.bold Разработка ПО на заказ 
-            | - основное направление деятельности компании 
-            span.red.bold Simplex Software
 
-        .divider-grey.divider-grey--thin
-        
-        .container
-          .portfolio-block
-            .portfolio-section
-              .page-subtitle CRM системы
-            
-              p 
-                a(href="Simplex-CRM-B2B.html").bold Simplex-CRM B2B 
-                | - простая в использовании 
-                span.bold CRM 
-                | система для продаж на В2B рынке.
+          .for-startup
+            h1.for-startup__title Краткое портфолио ООО “Симплекс Софтвер”
+            p
+            .for-startup__forward Программное обеспечение разработанное на заказ
+            .text-block
+              h5.text-block__title.text-block__title_big Программа для общеобразовательной школы
+              .text-block__text
+                p.
+                  Программа предназначена для внутрикорпоративного использования. Разработана с нуля.
+                  Программа автоматизирует процессы и расчёты в школе, которые ранее велись на бумаге. Ученикам
+                  старших и средних классов классным руководителем и учителями-предметниками
+                  начисляются баллы — как положительные(за участие в олимпиадах, внеклассную
+                  деятельность, поведение и т.п.), так и отрицательные(за опоздания и прогулы). Младшие
+                  классы вместо баллов в цифрах получают значки в виде «пчелок», «бабочек», «знаек» и др.
+                  В программе удобно просматривать и печатать отчеты: отчет по параллели, отчет классного руководителя,
+                  отчет по классам, отчет по триместрам, свой отчет. «Свой отчет» выдаёт данные только по одному ученику
+                  либо для самого ученика, либо для его родителей. Доски почета старших и младших классов транслируются
+                  на экраны в коридорах школы.
+                  Внедрение программы с презентацией-обучением - осень 2017г.
+                img.text-block__img(src="images/portfolio/school__1.png", alt="school__1")
+                img.text-block__img(src="images/portfolio/school__2.png", alt="school__2")
+                img.text-block__img(src="images/portfolio/school__3.png", alt="school__3")
+            .text-block
+              h5.text-block__title.text-block__title_big Plagiatanet99
+              .text-block__text
+                p.
+                  Сайт предназначен для повышения уникальности документов. Созданы сложные алгоритмы обработки документов, доработана верстка, разработан весь
+                  функционал, включая систему оплат.
+                p Сайт продукта:&nbsp
+                  a(href="https://plagiatanet99.ru/index.html") https://plagiatanet99.ru/index.html
+                img.text-block__img(src="images/portfolio/plagiatanet__1.png", alt="plagiatanet__1")
+                img.text-block__img(src="images/portfolio/plagiatanet__2.png", alt="plagiatanet__2")
+            .text-block
+              h5.text-block__title.text-block__title_big Talksift
+              .text-block__text
+                p.
+                  Это дискуссионная площадка (форум) для ведения споров на любые темы. Разработка с нуля. Особенностью данного
+                  сайта, является то, что при разработке внешнего облика программы использовался только дизайн среды.
+                p Сайт продукта:&nbsp
+                  a(href="http://talksift.ru/") http://talksift.ru/
+                img.text-block__img(src="images/portfolio/talksift__1.png", alt="talksift__1")
+            .text-block
+              h5.text-block__title База "Арбат" для агентства недвижимости
+              .text-block__text
+                p.
+                  Это CRM-система для внутрикорпоративного использования. Разработана с нуля. Программа позволяет вести
+                  базы объектов недвижимости в Москве и МО. Основное направление деятельности заказчика — сделки по
+                  аренде помещений в «Москва СИТИ» и по другим объектам элитной недвижимости. В программе реализована
+                  автоматическая выгрузка в ЦИАН и АВИТО, поиск по различным параметрам в базе объектов недвижимости
+                  и многое другое. Разработка основного функционала завершена около года назад, но программа продолжает
+                  развиваться, к ней периодически добавляются новые функции. Одним из последних усовершенствований было
+                  добавление автоматического наложения «водяных знаков» на фотографии объектов недвижимости.
+                img.text-block__img(src="images/portfolio/arbat__1.png", alt="arbat__1")
+            p
+            .for-startup__forward Собственные разработки
+            .text-block
+              h5.text-block__title.text-block__title_big Клуб «Исходный код»
+              .text-block__text
+                p.
+                  Это сайт-клуб для организации встреч программистов и it-специалистов, где каждый участник может
+                  предложить свою тему для выступления. На данные момент реализовано удобное голосование по актуальности
+                  каждой темы, подсчёт голосов (лайков, дизлайков), быстрая регистрация через соцсети и многое другое.
+                  Проект на стадии разработки.
+                p Сайт продукта:&nbsp
+                  a(href="http://www.source-code.club/") http://www.source-code.club/
+                img.text-block__img(src="images/portfolio/source-code__1.png", alt="source-code__1")
+                img.text-block__img(src="images/portfolio/source-code__2.png", alt="source-code__2")
+            .text-block
+              h5.text-block__title.text-block__title_big Открытая база недвижимости «Новые горизонты»
+              .text-block__text
+                p Это CRM система с открытым исходным кодом, которая позволяет собирать и хранить информацию об объектах недвижимости, контактах владельцев, информацию о рекомендателях; хранить фотографии, отображать объекты на карте; автоматически выгружать объявления в cian.ru и avito.ru; обмениваться информацией об объектах недвижимости с другими агентствами на бесплатной основе. С помощью мобильного приложения пользователь может вводить информацию об объекте через мобильное устройство, делать фотографии и определять геокоординаты. <br>
+                p Сайт продукта:&nbsp
+                  a(href="http://www.new-horizons.pro/index.html") http://www.new-horizons.pro/index.html
+                img.text-block__img(src="images/portfolio/new_horizons__1.png", alt="new_horizons__1")
+                img.text-block__img(src="images/portfolio/new_horizons__2.png", alt="new_horizons__2")
+                img.text-block__img(src="images/portfolio/new_horizons__3.png", alt="new_horizons__3")
+            .text-block
+              h5.text-block__title.text-block__title_big SIMPLEX-CRM система для юридических компаний
+              .text-block__text
+                p.
+                  Это специализированная CRM-система, для автоматизации юридических компаний. Она позволяет собирать и хранить
+                  информацию о клиенте и историю взаимоотношений с ним; ставить задачи сотрудникам; создавать документы
+                  по шаблонам, хранить их на сервере; отслеживать движение дела в суде и получать напоминания о предстоящих делах;
+                  Внедрение системы позволяет сократить издержки и повысить качество обслуживания компании.
+                p  Ссылка на презентацию системы на нашем сайте:&nbsp
+                  a(href="http://simplex-software.ru/juriCRM.html") http://simplex-software.ru/juriCRM.html
+                img.text-block__img(src="images/portfolio/simplex-crm__1.png", alt="simplex-crm__1")
+                img.text-block__img(src="images/portfolio/simplex-crm__2.png", alt="simplex-crm__2")
+                img.text-block__img(src="images/portfolio/simplex-crm__3.png", alt="simplex-crm__3")
 
-              p 
-                a(href="Simplex-CRM-B2C.html").bold Simplex-CRM B2C
-                | - простая в использовании 
-                span.bold CRM 
-                | система, которая доступна онлайн.
+    form.subscribe-form(action="subscribe.php", type="post")
+      .subscribe-form__title История успеха:  Подпишитесь на  серию писем с историями успеха  наших клиентов.
+      input.subscribe-form__email(type="email", name="email", placeholder="e-mail", required)
+      input.subscribe-form__submit(type="submit", value="Подписаться")
 
-              p 
-                a(href="Cards-CRM.html").bold Cards-CRM 
-                | - Специализированная
-                span.bold CRM 
-                | система переводческой компании.
-
-              p 
-                a(href="juriCRM.html").bold Simplex-CRM для юридических компаний
-                | - Специализированная
-                span.bold CRM 
-                | для юридических компаний.
-            
-            .portfolio-section
-              .page-subtitle Анализ данных
-              p 
-              span.bold Star Analizer 
-              | - Система анализа цен на рынке недвижимости и поиска целевых клиентов. Анализирует данные из открытых источников (avito.ru, irr.ru, ...)
-
-            .portfolio-section
-              .page-subtitle Открытая база недвижимости "Новые горизонты"
-              p 
-                a(href="http://www.new-horizons.pro/" target="_blank").bold Новые горизонты
-                  img(src="images/external-link-ltr-icon.png")
-                | - Система автоматизации агентства недвижимости, включает базу по объектам недвижимости и возможность обмена информацией с другими агентствами недвижимости.
-
-            .portfolio-section
-              .page-subtitle Разработка мобильного приложения для ювелирных компаний
-              p 
-                | Для клиентов сервиса 
-                a(href="http://zlatoblako.ru/" target="_blank") Золотое облако
-                    img(src="images/external-link-ltr-icon.png")
-                | мы разрабатываем мобильное приложение - программа лояльности для ювелирных магазинов.
-            
+          
     //= template/footer.jade
 
     //= template/scripts.jade
