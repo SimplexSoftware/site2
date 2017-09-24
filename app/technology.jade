@@ -8,23 +8,28 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 
       //= template/header.jade
 
-      section.middle
-        
-        .container
-          .title-h1 
-            span.bold Разработка ПО на заказ 
-            | - основное направление деятельности компании 
-            span.red.bold Simplex Software
+      section.middle.middle-index
 
-        .divider-grey.divider-grey--thin
-        
+        .jumbtrone
+          .container
+            .logo
+              a(href="index.html")
+                img(src="images/logo.png", alt="logo")
+
+            .jumbtrone__body
+              .jumbtrone__title Разработка ПО на заказ
+              .jumbtrone__subtitle основное направление деятельности компании Simplex Software
+        // jumbtrone end
+
         .container
-          .notice
-            h2.notice__title Используемые технологии
-            p.notice__text Не секрет, что успешность реализации проекта (особенно это актуально в условиях, когда нужно уложиться в ограниченный бюджет и сроки) зависит от правильного выбора технологий. Выбор технологии происходит на стадии проектирования.
-          
-          .b-technology
-            .title СЕРВЕРНЫЕ ТЕХНОЛОГИИ:
+          .for-startup
+            .page-title Используемые технологии
+            .text-block__text
+              p.
+                Не секрет, что успешность реализации проекта (особенно это актуально в условиях, когда нужно уложиться в
+                ограниченный бюджет и сроки) зависит от правильного выбора технологий. Выбор технологий происходит на
+                стадии проектирования.
+            .text-block
 
             .b-technology__item
               .b-technology__title 
@@ -88,6 +93,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                 img( src="images/logo_teh15.jpg", alt="img")
                 img( src="images/logo_teh16.jpg", alt="img")
 
+        form.subscribe-form
+          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Написать нам письмо
 
     //= template/footer.jade
 

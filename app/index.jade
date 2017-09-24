@@ -13,17 +13,18 @@ html(xmlns='http://www.w3.org/1999/xhtml')
         .jumbtrone
           .container
             .logo
-              a(href="#!")
+              a(href="index.html")
                 img(src="images/logo.png", alt="logo")
             
             .jumbtrone__body
               .jumbtrone__title Разработка ПО на заказ
               .jumbtrone__subtitle основное направление деятельности компании Simplex Software
         // jumbtrone end
+
         .container
+          p
           .what-we-do
-            .page-title Что мы делаем
-            
+            .page-title Что мы делаем?
             .row
               .col-sm-6
                 .activity
@@ -45,7 +46,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
           .divider-grey
 
           .our-projects
-            .page-title Некоторые наши проекты
+            .page-title Наши проекты
             .row
               .col-sm-6
                 .item
@@ -107,17 +108,21 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                 a(href="advantages.html#connect") подробнее
           // our-advantages end
 
-          .divider-grey
-          .sign-form-title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          //.divider-grey
+          //.sign-form-title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
 
 
-          form.sign-form
+          //form.sign-form
             //.sign-form-title История успеха:  Подпишитесь на  серию писем с историями успеха  наших клиентов. 
             //.form-group
               //input(type="email" placeholder="e-mail")
             button(type="submit" onclick="sendMail();").btn Написать нам письмо
           // sign-form end
-          
+
+        form.subscribe-form
+          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Написать нам письмо
+
     //= template/footer.jade
 
     //= template/scripts.jade

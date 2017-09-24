@@ -14,27 +14,23 @@ html(xmlns='http://www.w3.org/1999/xhtml')
         .jumbtrone
           .container
             .logo
-              a(href="#!")
+              a(href="index.html")
                 img(src="images/logo.png", alt="logo")
             
             .jumbtrone__body
               .jumbtrone__title Разработка ПО на заказ
               .jumbtrone__subtitle основное направление деятельности компании Simplex Software
         // jumbtrone end
-        .container
 
+        .container
           .for-startup
             img.for-startup__image.text-center(src="images/startup.jpg", alt="startup", width="445")
             h1.for-startup__title ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ДЛЯ СТАРТАПОВ
-            .for-startup__forward Мы можем и умеем решать сложные задачи, при этом делаем проект так, как Вам необходимо, а не как это позволяют конструкторы сайтов или готовые шаблонные полурешения.
+            .for-startup__forward Мы можем и умеем решать сложные задачи, при этом делаем проект так, как Вам необходимо, а не как это позволяют конструкторы сайтов или готовые шаблонные решения.
             .text-block
               h5.text-block__title.text-block__title_big Конфиденциальность
               .text-block__text
                 p Компания "Симплекс Софтвер" гарантирует Вам конфиденциальность предоставленной информации. У нас работает проверенная команда и Ваша идея не уйдет на сторону до запуска проекта.
-            .text-block
-              h5.text-block__title Безопасность проекта
-              .text-block__text
-                p   Наша компания разработает для Вас продукт, который будет защищен по всем техническим вопросам от взломов и хакерских атак. Для этого нами создаются индивидуальные, уникальные шифры и коды.
             .text-block
               h5.text-block__title Погружение
               .text-block__text
@@ -84,11 +80,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
               img.text-block__img(src="images/scheme-3.png", alt="minimum viable product")
 
 
-    form.subscribe-form(action="subscribe.php", type="post")
-      .subscribe-form__title История успеха:  Подпишитесь на  серию писем с историями успеха  наших клиентов.
-      input.subscribe-form__email(type="email", name="email", placeholder="e-mail", required)
-      input.subscribe-form__submit(type="submit", value="Подписаться")
-
+        form.subscribe-form
+          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Написать нам письмо
 
           
     //= template/footer.jade

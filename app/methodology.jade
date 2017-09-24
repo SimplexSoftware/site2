@@ -14,13 +14,14 @@ html(xmlns='http://www.w3.org/1999/xhtml')
         .jumbtrone
           .container
             .logo
-              a(href="#!")
+              a(href="index.html")
                 img(src="images/logo.png", alt="logo")
             
             .jumbtrone__body
               .jumbtrone__title Разработка ПО на заказ
               .jumbtrone__subtitle основное направление деятельности компании Simplex Software
         // jumbtrone end
+
         .container
           .methodology
             h1.methodology__title Программное обеспечение для автоматизации бизнеса
@@ -72,6 +73,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                     li(type="circle") Невозможно добавление нового функционала «на лету», только путём составления нового дополнительного ТЗ <br>
                     li(type="circle") Из-за того что реализуется всё, что описано в ТЗ – возможна реализация неактуального функционала
 
+        form.subscribe-form
+          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Написать нам письмо
           
     //= template/footer.jade
 
