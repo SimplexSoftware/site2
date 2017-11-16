@@ -21,3 +21,14 @@
         d.addEventListener("DOMContentLoaded", f, false);
     } else { f(); }
 })(document, window, "yandex_metrika_callbacks");
+
+
+$('body').activity({
+    'achieveTime':60
+    ,'testPeriod':10
+    ,useMultiMode: 1
+    ,callBack: function (e) {
+        ga('send', 'event', 'Activity', '60_sec');
+        yaCounter23252275.reachGoal('60_sec');
+    }
+});
