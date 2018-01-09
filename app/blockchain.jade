@@ -1,0 +1,74 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+
+  body
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle.middle-index
+        
+        .jumbtrone
+          .container
+            .logo
+              a(href="index.html")
+                img(src="images/logo.png", alt="logo")
+            
+            .jumbtrone__body
+              .jumbtrone__title Разработка ПО на заказ
+              .jumbtrone__subtitle Разработка на основе технологии Blockchain
+        // jumbtrone end
+        .container
+
+          .our-advantages.our-advantages_big
+            h1.our-advantages__title Что мы умеем
+            ul.our-advantages__list
+              mixin our-advantages-item(idName, title, image, subtitle, text)
+                li.our-advantages__item.our-advantages-item(id=idName)
+
+                  h5.our-advantages-item__title!= title
+                  img.our-advantages-item__image(src= image, alt= title)
+                  h6.our-advantages-item__subtitle!= subtitle
+                  .our-advantages-item__text!= text
+              +our-advantages-item("id","Разработка и внедрение смарт-контрактов для блокчейн-платформ:\n" +
+              "                            cоздание ERC20 токенов, смарт контракты для проведения ICO", "images/advantage-icon-1.png",
+                "Благодаря выпуску Ваших собственных токенов на блокчейне можно получить возможность привлечь интерес и " +
+                "капитал, чтобы реализовать Вашу бизнес-идею максимально быстро и эффективно.")
+              +our-advantages-item("id2","Разработка личного кабинета инвестора", "images/advantage-icon-2.png",
+                "Создание интерфейса пользователя (Front-end) для взаимодействия со смарт контрактом и блокчейн средой")
+
+              +our-advantages-item("id3","DAPP блокчейн приложения", "images/advantage-icon-3.png",
+                      "Создание сматрт контрактов для децентрализованных приложений.",
+              "<p>Создание мобильных и веб приложений взаимодействующими с блокчейном платформами.</p>")
+
+              +our-advantages-item("id4","Развёртывание приватных блокчейн платформ",
+                "images/blockchain.png",
+                 "Для взаимодействий с контрагентами Вам нужен свой независимый блокчейн?",
+                "<p>Мы поможем развернуть приватный блокчейн и создать приложения для взаимодействия с ним.</p>")
+              +our-advantages-item("id5","Технические консультации и поддержка.", "images/advantage-icon-5.png",
+              "",
+              "<p>Заказывая разработку вы автоматически получаете техническую поддержку и доступ к экспертным знаниям нашей команды.</p>")
+
+              h1.our-advantages__title Наши клиенты
+              li.our-advantages__item.our-advantages-item(id="clients")
+                h5.our-advantages-item__title!= ""
+                img.our-advantages-item__image(src= "images/sberbank-ast.png", alt= "Сбербанк АСТ")
+                img.our-advantages-item__image(src= "images/fankassa.png", alt= "Fankassa")
+                h6.our-advantages-item__subtitle!= "Сбербанк АСТ,  Fankassa"
+
+
+
+
+              
+        form.subscribe-form
+          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Написать нам письмо
+
+
+          
+    //= template/footer.jade
+
+    //= template/scripts.jade

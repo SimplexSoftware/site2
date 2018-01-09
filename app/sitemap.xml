@@ -41,10 +41,10 @@
         <loc>http://www.simplex-software.ru/mobile_applications.html</loc>
         <changefreq>weekly</changefreq>
     </url>
-    <!--<url>-->
-        <!--<loc>http://www.simplex-software.ru/new-horizons.html</loc>-->
-        <!--<changefreq>weekly</changefreq>-->
-    <!--</url>-->
+    <url>
+        <loc>http://www.simplex-software.ru/blockchain.html</loc>
+        <changefreq>weekly</changefreq>
+    </url>
 
     <url>
         <loc>http://www.simplex-software.ru/site-development.html</loc>
