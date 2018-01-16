@@ -1,18 +1,18 @@
 mixin what-we-can__item(right, title, text, source, alt)
   if right
     .what-we-can__item.what-we-can-item.what-we-can-item_right
+      .what-we-can-item__image-container
+        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
       .what-we-can-item__content
         h4.what-we-can-item__title= title
         .what-we-can-item__texr= text
-      .what-we-can-item__image-container
-        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
   else
     .what-we-can__item.what-we-can-item
+      .what-we-can-item__image-container
+        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
       .what-we-can-item__content
         h4.what-we-can-item__title= title
         .what-we-can-item__texr= text
-      .what-we-can-item__image-container
-        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
 
 mixin we-work-with__item(source, alt)
   img(src="images/#{source}.png", alt="#{alt}")
