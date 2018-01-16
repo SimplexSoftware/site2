@@ -1,0 +1,48 @@
+@import mixins
+@import const
+@import sprite
+
+/*----------- button style *
+ ------------------------------------------------------------*/
+
+.btn
+  min-width: 200px
+  position: relative
+  display: inline-block
+  vertical-align: middle
+  padding: 13px 20px
+  margin: 0
+  font: 900 24px/24px $btn-font-family
+  text-align: center
+  text-decoration: none
+  cursor: pointer
+  outline: none
+  border: none
+  background-image: linear-gradient(to top, #fc682b 0%, #a63000 100%)
+  color: $btn-color
+  border-radius: 10px
+  transition: all 0.2s ease
+  box-shadow: 1.5px 2.6px 7px rgba(0, 0, 0, 0.35)
+  &:hover
+    background-image: linear-gradient(to top, #a63000 0%, #fc682b 100%)
+    color: $btn-h-color
+    text-decoration: none
+  &:active
+    background-image: linear-gradient(to top, #a63000 0%, #fc682b 100%)
+    color: $btn-act-color
+    box-shadow: $btn-act-shadow
+  &:focus
+    outline: none
+    color: $btn-color
+
+.btn-max
+  width: 100%
+
+
+
+/*----------- media style -----------*/
+
+
+// @media only screen and (max-width: 768px)
+
+// @media only screen and (max-width: 480px)

@@ -1,0 +1,58 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body(data-menu="contacts")
+    #wrapper
+
+      //= template/header.jade
+
+
+
+      section.middle.middle-index
+
+        //= template/jumbtrone.jade
+
+        .container
+          .for-startup
+            .page-title Наши контакты
+          .row
+            .col-sm-6.col-md-5.col-md-offset-1
+              .contacts-info
+                .contacts-section
+                  .contacts-title Наименование организации:
+                  div.contacts-section__item ООО "Симплекс-Софтвер"
+
+                .contacts-section
+                  .contacts-title Генеральный директор:
+                  div.contacts-section__item Ржевский Дмитрий Валерьевич
+                  div.contacts-section__item Е-mail: 
+                    a(href="mailto:info@simplex-software.ru") info@simplex-software.ru
+                  div.contacts-section__item Телефон: +7(926)426-55-55
+
+                .contacts-section
+                  .contacts-title Отдел продаж:
+                  div.contacts-section__item Телефон: +7(499)380-73-75
+
+                .contacts-section
+                  .contacts-title Юридический адрес:
+                  div.contacts-section__item Москва, ул. Воронежская, д. 28, к.1
+
+                .contacts-section
+                  .contacts-title Фактический адрес:
+                  div.contacts-section__item Москва, Окружной проезд, д. 19. БЦ "Окружной"
+                br
+
+            .col-sm-6
+              .map
+                //script(<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A97e6b02d7c1ae47e9c85ad9a82adace772a369f7298ec2e5cdaaebdffe5f3143&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
+                script(type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A72b2e591bfc60294bf2fcf69632dd18f9e568b39751040b9868c8e6d937503c6&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
+          
+        form.subscribe-form
+          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Написать нам письмо
+          
+    //= template/footer.jade
+
+    //= template/scripts.jade
