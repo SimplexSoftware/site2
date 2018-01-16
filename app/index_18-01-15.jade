@@ -1,0 +1,75 @@
+mixin what-we-can__item(right, title, text, source, alt)
+  if right
+    .what-we-can__item.what-we-can-item.what-we-can-item_right
+      .what-we-can-item__image-container
+        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
+      .what-we-can-item__content
+        h4.what-we-can-item__title= title
+        .what-we-can-item__texr= text
+  else
+    .what-we-can__item.what-we-can-item
+      .what-we-can-item__image-container
+        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
+      .what-we-can-item__content
+        h4.what-we-can-item__title= title
+        .what-we-can-item__texr= text
+
+mixin we-work-with__item(source, alt)
+  img(src="images/#{source}.png", alt="#{alt}")
+
+
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head.jade
+
+  body(data-menu="index")
+    #wrapper
+
+      //= template/header.jade
+
+      section.middle.middle-index
+
+        //= template/jumbtrone.jade
+
+        .container
+          .what-we-can.page-block
+            .page-title Что мы умеем
+            .what-we-can__container
+              +what-we-can__item(1, "Разработка и внедрение смарт-контрактов для блокчейн-платформ: cоздание ERC20 токенов, смарт контракты для проведения ICO",
+              "Благодаря выпуску Ваших собственных токенов на блокчейне можно получить возможность привлечь интерес и капитал, чтобы реализовать Вашу бизнес-идею максимально  быстро и эффективно.",
+              "what-we-can-1",
+              "Разработка и внедрение смарт-контрактов")
+              +what-we-can__item(0, "Разработка личного кабинета инвестора",
+              "Создание интерфейса пользователя (Front-end) для взаимодействия со смарт контрактом и блокчейн средой.",
+              "what-we-can-2",
+              "Разработка личного кабинета инвестора")
+              +what-we-can__item(1, "DAPP блокчейн приложения",
+              "Создание смарт контрактов для децентрализованных приложений. Создание мобильных и веб приложений взаимодействующими с блокчейном платформами.",
+              "what-we-can-3",
+              "DAPP блокчейн приложения")
+              +what-we-can__item(0, "Развёртывание приватных блокчейн платформ",
+              "Для взаимодействий с контрагентами Вам нужен свой независимый блокчейн? Мы поможем развернуть приватный блокчейн и создать приложения для взаимодействия с ним.",
+              "what-we-can-4",
+              "Развёртывание приватных блокчейн платформ")
+              +what-we-can__item(1, "Технические консультации и поддержка",
+              "Заказывая разработку вы автоматически получаете техническую поддержку и доступ к экспертным знаниям нашей команды.",
+              "what-we-can-5",
+              "Технические консультации и поддержка")
+
+
+          .we-work-with.page-block
+            .page-title Наши клиенты
+            .we-work-with__container
+              +we-work-with__item("sberbank", "Сбербанк России - клиент Simplex software")
+              +we-work-with__item("fankassa", "Fankassa - клиент Simplex software")
+
+        form.subscribe-form
+          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
+          button(type="submit" onclick="sendMail()").subscribe-form__submit Написать нам письмо
+
+
+    //= template/footer.jade
+
+    //= template/scripts.jade
+
