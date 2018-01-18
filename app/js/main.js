@@ -77,3 +77,8 @@ $(document).ready(function () {
     $('.page-title').wrapInner('<span></span>');
 
 });
+
+// Масштабирование интерфейса после загрузки
+$(document).ready(function () {
+    $('#wrapper').css('zoom', '0.86');
+});
