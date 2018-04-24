@@ -15,7 +15,9 @@ mixin what-we-can__item(right, title, text, source, alt)
         .what-we-can-item__texr= text
 
 mixin we-work-with__item(source, alt)
-  img(src="images/#{source}.png", alt="#{alt}")
+  img(src="images/#{source}.png", alt="#{alt}")  
+  
+
 
 
 doctype html
@@ -36,7 +38,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
           .what-we-can.page-block
             .page-title Что мы умеем
             .what-we-can__container
-              +what-we-can__item(1, "Разработка и внедрение смарт-контрактов для блокчейн-платформ: cоздание ERC20 токенов, смарт-контракты для проведения ICO",
+              +what-we-can__item(1, "Разработка и внедрение смарт-контрактов для блокчейн-платформ: cоздание ERC20 и ERC223 токенов, смарт-контракты для проведения ICO",
               "Благодаря выпуску Ваших собственных токенов на блокчейне, можно получить возможность привлечь интерес и капитал инвесторов, чтобы реализовать Вашу бизнес-идею максимально  быстро и эффективно.",
               "what-we-can-1",
               "Разработка и внедрение смарт-контрактов")
@@ -59,10 +61,39 @@ html(xmlns='http://www.w3.org/1999/xhtml')
 
 
           .we-work-with.page-block
-            .page-title Наши клиенты
+            .page-title Наши работы
             .we-work-with__container
-              +we-work-with__item("sberbank-ast", "Сбербанк России - клиент Simplex software")
-              +we-work-with__item("fankassa", "Fankassa - клиент Simplex software")
+              div(align="center")
+                img(src="images/sberbank-ast.png", alt="Сбербанк АСТ -  Simplex software" align="left")  
+                div(style="margin-top:50px")
+                    Сбербанк-АСТ - крупнейшая тендерная площадка России.                     
+                    Мы разрабатываем систему для ведения торгов в блокчейне.
+              br             
+              br
+              br  
+              div
+
+                img(src="images/pajcoin.png", alt="PajCoin - Simplex software" align="left")
+                div
+                  a(href="https://www.pajcoin.com/") PajCoin
+                  – это токен, обеспеченный активами.
+                  Эмиссия обеспечена ценными бумагами, денежными средствами и другими активами, принадлежащими Эмитенту.
+                           
+              hr(style="height:30pt; visibility:hidden;" )
+              
+
+
+              div(style="margin-top:50px")
+                img(src="images/wheels.png", alt="Автоматизация" align="left") 
+                div                                      
+                    Система для автоматизации и учёта криптовалюты.
+              br
+
+              div(style="margin-top:50px")
+                img(src="images/wheels.png", alt="Автоматизация" align="left")
+                div
+                    Телеграмм бот для обмена валют.
+              br
 
         form.subscribe-form
           .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
