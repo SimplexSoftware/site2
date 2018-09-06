@@ -1,0 +1,130 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head_en.jade
+
+  body(data-menu="index")
+    #wrapper
+
+      //= template/header_en.jade
+
+      section.middle.middle-index
+        
+        .jumbtrone
+          .container
+            .logo
+              a(href="index.html")
+                img(src="images/logo.png", alt="logo")
+            
+            .jumbtrone__body
+              .jumbtrone__title Customized software development
+              .jumbtrone__subtitle main area of Simplex Software company
+        // jumbtrone end
+
+        .container
+          p
+          .what-we-do
+            .page-title What we do
+            .row
+              .col-sm-6
+                .activity
+                  .activity__image
+                    a(href="methodology.html")
+                      img(src="images/what-do-icon-1.png", alt="what-we-do")
+                  .activity__title Small business automation
+                  .activity__descr CRM and ERP
+                  .activity__goal Tasks: profit increase, expenses decrease.
+                  a(href="methodology.html") Read more...
+              .col-sm-6
+                .activity
+                  .activity__image
+                    a(href="startup.html")
+                      img(src="images/what-do-icon-2.png", alt="what-we-do")
+                  .activity__title Start-ups
+                  .activity__descr Creation of portals and services, mobile applications.
+                  .activity__goal Tasks: Creation of high-margin business from scratch.
+                  a(href="startup.html") Read more...
+
+                  .activity__title Blockchains
+                  .activity__descr Creation of smart-contracts and decentralized applications.
+                  .activity__goal Tasks: attracting investment for innovative projects.
+                  a(href="blockchain.html") Read more...
+          // what-we-do end
+          .divider-grey
+
+          .our-projects
+            .page-title Our projects
+            .row
+              .col-sm-6
+                .item
+                  .item__title Real estate base “New Horizons”
+                //a(href="http://www.new-horizons.pro/") Read more...
+              .col-sm-6
+                .item
+                  .item__title Talksift (panel discussion)
+                //a(href="portfolio.html") Read more...
+              .col-sm-6
+                .item
+                  .item__title Real estate agency “AllMoscowRealty”
+                a(href="portfolio.html") Read more...
+              .col-sm-6
+                .item
+                  .item__title Mobile application for “Golden Cloud” service
+                a(href="portfolio.html") Read more...
+          // our-projects end
+
+          .divider-grey
+
+          .our-advantages
+            .page-title Our advantages
+            .advantages-list
+             
+              .advantage
+                .advantage__image
+                  a(href="advantages.html#flex")
+                    img(src="images/advantage-icon-1.png", alt="advantage-icon")
+                .advantage__title Flexibility
+                .advantage__description we will help you to choose solutions favourable for price and functionality
+                a(href="advantages.html#flex") Read more..
+
+              .advantage
+                .advantage__image
+                  a(href="advantages.html#events")
+                    img(src="images/advantage-icon-2.png", alt="advantage-icon")
+                .advantage__title Transparency
+                .advantage__description of working with us: projects management system is implemented in the company
+                a(href="advantages.html#events") Read more..
+
+              .advantage
+                .advantage__image
+                  a(href="advantages.html#artifact")
+                    img(src="images/advantage-icon-3.png", alt="advantage-icon")
+                .advantage__title Developed artifacts transfer:
+                .advantage__description source code + documentation package
+                a(href="advantages.html#artifact") Read more..
+
+              .advantage
+                .advantage__image
+                  a(href="advantages.html#no_bureaucracy")
+                    img(src="images/advantage-icon-4.png", alt="advantage-icon")
+                .advantage__title No bureaucracy
+                .advantage__description As opposed to large companies, everything is solved without delay
+                a(href="advantages.html#no_bureaucracy") Read more..
+
+              .advantage
+                .advantage__image
+                  a(href="advantages.html#connect")
+                    img(src="images/advantage-icon-5.png", alt="advantage-icon")
+                .advantage__title We always keep in touch!
+                .advantage__description Support of the ready project
+                a(href="advantages.html#connect") Read more...
+          // our-advantages end
+
+
+        form.subscribe-form
+          .subscribe-form__title Contact us by phone +7(499)380-73-75 or send project description to info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Send us email
+
+    //= template/footer_en.jade
+
+    //= template/scripts.jade

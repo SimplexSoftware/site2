@@ -1,0 +1,43 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head_en.jade
+
+
+  body
+    #wrapper
+
+      //= template/header_en.jade
+
+      section.middle.middle-index
+
+        //= template/jumbtrone_en.jade
+
+        .container
+
+          .our-advantages.our-advantages_big
+            h1.our-advantages__title Our advantages
+            ul.our-advantages__list
+              mixin our-advantages-item(idName, title, image, subtitle, text)
+                li.our-advantages__item.our-advantages-item(id=idName)
+
+                  h5.our-advantages-item__title!= title
+                  img.our-advantages-item__image(src= image, alt= title)
+                  h6.our-advantages-item__subtitle!= subtitle
+                  .our-advantages-item__text!= text
+              +our-advantages-item("flex","Flexibility", "images/advantage-icon-1.png", "You have a good idea, but you do not know what to start with? <br/>Or maybe you do not want to write terms of reference?", "<p>We will help you to choose solutions favourable for price and functionality requirements, advice what to start with and make terms of reference. We can carry out professional analysis and facilitate approach to the solution of the objectives due to reduction of your expenditures for software, cutting project’s price. Stage-by-stage project completion will permit to pay for each stage separately, when you wish or in case you have a limited budget. </p><p>If you do not know clearly what your potential users (customers) need, we advise to develop Minimum Viable Product (MVP) first.</p>")
+              +our-advantages-item("events","Do you want to stay informed ?", "images/advantage-icon-2.png", "Transparency of work with us", "<p>Projects management system, that permits to be informed about all events, is implemented in our company. You can remotely look from your computer which tasks are already fulfilled, which are planned for fulfilment and see the current stage of the project fulfilment. Frequent releases help to see developing system alive (in the works) before obtaining final (completed) result.</p>")
+              +our-advantages-item("artifact","Are you worried that your project will not be finished?", "images/advantage-icon-3.png", "Developed artifacts transfer", "<p>Many companies try to tie customers to themselves and write programmes so that nobody of outside developers could make sense of the developed software system. We transfer <b>source code + documentation package</b> with developed on order programme: for administrator, database scheme and comments on it and to the code. Such approach permits to give freedom to the customer in the choice of the developer and will give an opportunity to translate developed product and support it inside the company in future.</p>")
+              +our-advantages-item("no_bureaucracy","Are you still hesitating?", "images/advantage-icon-4.png", "No bureaucracy", "<p>In contrast to large companies with overcrowded staff, we solve everything promptly. Our Chief executive controls each project personally, which permits to make important solutions immediately and accelerates all processes in the company. Direct link with company’s management contributes to the responsibility of all employees and therefore we work well! Chief executive’s contacts are availble in the public domain, you can always communicate with him directly.</p>")
+              +our-advantages-item("connect","We always keep in touch!", "images/advantage-icon-5.png", "", "<p>Professional managers, who know software building aspects well and at the same time speak “human” language, will accompany your project from the very beginning and to receiving ready, functioning software product.</p><p>We also provide support for ready projects: we always keep in touch! You get technical support without delay.</p>")
+
+              
+        form.subscribe-form
+          .subscribe-form__title Contact us by phone +7(499)380-73-75 or send project description to info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Send us email
+
+
+          
+    //= template/footer_en.jade
+
+    //= template/scripts.jade

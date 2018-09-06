@@ -1,0 +1,101 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head_en.jade
+
+  body(data-menu="technology")
+    #wrapper
+
+      //= template/header_en.jade
+
+      section.middle.middle-index
+
+        //= template/jumbtrone_en.jade
+
+        .container
+          .for-startup
+            .page-title Used technologies
+            .text-block__text
+              p.
+                It is no secret that success in project realization (this is particularly relevant under the conditions, when it is necessary to meet limited budget and terms) depends on the right choice of technologies. The choice of technologies takes place at designing stage.
+            .text-block
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Relational databases:
+                .b-technology__name Oracle, Postgresql, Mysql
+
+              .b-technology__images
+                img( src="images/logo_teh1.jpg", alt="img")
+                img( src="images/logo_teh2.jpg", alt="img")
+                img( src="images/logo_teh3.jpg", alt="img")
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Non-relational databases:
+                .b-technology__name Hadoop, Cassandra
+
+              .b-technology__images
+                img( src="images/logo_teh4.jpg", alt="img")
+                img( src="images/logo_teh5.jpg", alt="img")
+                
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Programming languages:
+                .b-technology__name Java, Javascript, Scala
+
+              .b-technology__images
+                img( src="images/logo_teh6.jpg", alt="img")
+                img( src="images/logo_teh7.jpg", alt="img")
+                img( src="images/logo_teh8.jpg", alt="img")
+                
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Frameworks:
+                .b-technology__name Spring, Hibernate, JDO, Zkoss, GWT, Wicket, EJB
+
+              .b-technology__images
+                img( src="images/logo_teh9.jpg", alt="img")
+                img( src="images/logo_teh10.jpg", alt="img")
+                img( src="images/logo_teh11.jpg", alt="img")
+                img( src="images/logo_teh12.jpg", alt="img")
+
+
+            .b-technology__item
+              .b-technology__title
+                .b-technology__type Blockchain:
+                  .b-technology__name  Ethereum, Solidity, web3j
+
+              .b-technology__images
+                img( src="images/logo_etherium.png", alt="img")
+                img( src="images/logo_blockchain.png" alt="blockchain")
+
+            .b-technology__item
+              .b-technology__title
+                .b-technology__type Map services:
+                .b-technology__name Yandex-maps, OpenstreetMap
+
+              .b-technology__images
+                img( src="images/logo_teh17.jpg", alt="img")
+                img( src="images/logo_teh18.jpg", alt="img")
+
+            .b-technology__item
+              .b-technology__title 
+                .b-technology__type Other:
+                .b-technology__name Html, Javascript, Xml, web-services
+
+              .b-technology__images
+                img( src="images/html5.png", width="64px" alt="html5 logo")
+                img( src="images/js_logo.png.jpg", alt="javascript logo")
+                img( src="images/logo_teh15.jpg", alt="xml logo")
+                img( src="images/web20_logo.png", alt="web 2.0")
+
+        form.subscribe-form
+          .subscribe-form__title Contact us by phone +7(499)380-73-75 or send project description to info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Send us email
+
+    //= template/footer_en.jade
+
+    //= template/scripts.jade

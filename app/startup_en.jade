@@ -1,0 +1,71 @@
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml')
+
+  //= template/head_en.jade
+
+
+  body
+    #wrapper
+
+      //= template/header_en.jade
+
+      section.middle.middle-index
+
+        //= template/jumbtrone_en.jade
+
+        .container
+          .for-startup
+            img.for-startup__image.text-center(src="images/startup.jpg", alt="startup", width="445")
+            h1.for-startup__title SOFTWARE FOR START-UPS
+            .for-startup__forward We are able and can solve difficult tasks. Herewith, we make project as you need, not as it is permitted by site builders or ready one-size-fits-all solutions.
+            .text-block
+              h5.text-block__title.text-block__title_big Confidentiality
+              .text-block__text
+                p Simplex Software Company guarantees you confidentiality of the provided information. Our team is reliable, and your idea will not be leaked before project launch.
+            .text-block
+              h5.text-block__title Exposure
+              .text-block__text
+                p We will investigate your issue, taking into account your start-ups’ specifics. Your project will be guided by personal manager.
+            .text-block
+              h5.text-block__title Technologies choice
+              .text-block__text
+                p   Technologies choice at the designing stage influences substantially the whole development process, final software product and its work. Our employees have wide experience (over 20 years) in projects development and will help you to choose optimal technical solution. You can see the technologies &nbsp
+                  a(href="technology.html") here.
+            .text-block
+              h5.text-block__title Flexible adaptive interface
+              .text-block__text
+              img.text-block__img(src="images/adaptive.png", alt="Flexible adaptive interface")
+              .text-block__text
+                p Interface for different screen resolutions will be convenient for the access from any gadget. A personal user’s account is created for client’s interaction with site.
+            .text-block
+              h5.text-block__title Acceptance by search systems / internal SEO optimization
+              .text-block__text
+                p While developing portals and sites we take into account the requirements of search systems. This makes it possible in future to get high site traffic and minimize expenses for advertisement and promotion.
+            .text-block
+              h5.text-block__title Site management
+              .text-block__text
+                p You will be able to manage your portal/site yourself. If your project foresees administrative part, we develop special interface for interaction and give it to customer together with corresponding documentation (instruction) for administrators.
+            .text-block
+              h5.text-block__title MVP (minimum viable product)
+              img.text-block__img(src="images/scheme-1.png", alt="minimum viable product")
+              .text-block__text
+                p Minimum Viable Product (MVP) is a software product with some incomplete set of functionality, which is necessary for project launch. You can use it, it shows the main idea, but does not contain additional services, which are not necessary at the initial stage (they will be present in the ready version of software product). The main advantage of MVP is, that information gathering from MVP is often cheaper, than development of product with full set of functions – it decreases expenses and risks in case the product is not demanded. MVP permits to carry out product’s interim analysis and thereby to use means, dedicated for development efficiently. Creating product like MVP, you (or together with us) determine the contents of MVP functionality – what is the most important exactly for your start-up and should be first of all, and after the end you will be able to approve or correct further software development.<br>
+                p Using this product, you can at early stage:<br>
+                ul
+                 li(type="circle") Understand whether your idea is interesting for potential customers <br>
+                 li(type="circle") Get an opportunity to change and correct further project development<br>
+                 li(type="circle") Have an opportunity to get response from potential clients and/or develop a base of adherers of your start-up at the initial stage.
+              .text-block__text_caption Ordinary way of product development
+              img.text-block__img(src="images/scheme-2.png", alt="minimum viable product")
+              .text-block__text_caption Way of product development by means of MVP creation
+              img.text-block__img(src="images/scheme-3.png", alt="minimum viable product")
+
+
+        form.subscribe-form
+          .subscribe-form__title Contact us by phone +7(499)380-73-75 or send project description to info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Send us email
+
+          
+    //= template/footer_en.jade
+
+    //= template/scripts.jade
