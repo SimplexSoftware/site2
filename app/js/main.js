@@ -82,3 +82,45 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('#wrapper').css('zoom', '0.86');
 });
+
+// Переключение языка
+$(document).ready(function () {
+    if (localStorage.getItem('currentLang') == null) {
+        localStorage.setItem('currentLang', 'ru');
+    }
+    var pageLang = $('html').attr('lang');
+    if (pageLang !== localStorage.getItem('currentLang')) {
+        if (localStorage.getItem('currentLang') === 'ru') {
+            document.location.href = '/';
+        } else if (localStorage.getItem('currentLang') === 'en') {
+            document.location.href = '/index_en.html';
+        }
+    }
+
+    $('.lang-set').on('click', function () {
+        localStorage.setItem('currentLang', $(this).attr('data-lang'));
+        if (localStorage.getItem('currentLang') === 'ru') {
+            document.location.href = '/';
+        } else if (localStorage.getItem('currentLang') === 'en') {
+            document.location.href = '/index_en.html';
+        }
+    })
+});
+
+
+
+$('a:not([href^="http"])').on('click', function (event) {
+   if (localStorage.getItem('currentLang') === 'en') {
+       event.preventDefault();
+       var target = $(this).attr('href');
+       var strArr = target.split('.html');
+       if (strArr[0] === '/') {
+           strArr[0] = 'index';
+       }
+       var newTarget = strArr[0] + '_en.html';
+       if (strArr[1]) {
+           newTarget += strArr[1];
+       }
+       document.location.href = newTarget;
+   }
+});
