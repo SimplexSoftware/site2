@@ -1,0 +1,104 @@
+mixin what-we-can__item(right, title, text, source, alt)
+  if right
+    .what-we-can__item.what-we-can-item.what-we-can-item_right
+      .what-we-can-item__image-container
+        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
+      .what-we-can-item__content
+        h4.what-we-can-item__title= title
+        .what-we-can-item__texr= text
+  else
+    .what-we-can__item.what-we-can-item
+      .what-we-can-item__image-container
+        img.what-we-can-item__image(src="images/#{source}.jpg", alt="#{alt}")
+      .what-we-can-item__content
+        h4.what-we-can-item__title= title
+        .what-we-can-item__texr= text
+
+mixin we-work-with__item(source, alt)
+  img(src="images/#{source}.png", alt="#{alt}")  
+  
+
+
+
+doctype html
+html(xmlns='http://www.w3.org/1999/xhtml' lang="en")
+
+  //= template/head_en.jade
+
+  body(data-menu="index")
+    #wrapper
+
+      //= template/header_en.jade
+
+      section.middle.middle-index
+
+        //= template/jumbtrone_en.jade
+
+        .container
+          .what-we-can.page-block
+            .page-title What we can
+            .what-we-can__container
+              +what-we-can__item(1, "Development and implementation of smart-contracts for blockchain-platforms: ERC20 and ERC223 tokens creation, smart-contracts for ICO performing",
+              "Due to issue of your own tokens in blockchain, it is possible to get an opportunity to attract investors’ interest and capital, to fulfil your business idea as quickly and efficiently as possible.",
+              "what-we-can-1",
+              "Development and implementation of smart-contracts")
+              +what-we-can__item(0, "Personal investor’s profile development",
+              "Creation of user’s interface (Front-end) for interaction with blockchain/smart-contract.",
+              "what-we-can-2",
+              "Personal investor’s profile development")
+              +what-we-can__item(1, "DAPP blockchain-applications",
+              "Creation of smart-contract for decentralized applications. Creation of mobile and web- applications interacting with blockchain-platforms.",
+              "what-we-can-3",
+              "DAPP blockchain-applications")
+              +what-we-can__item(0, "Private blockchain-platforms developing",
+              "You need your independent blockchain for interactions with counterparties? We will help you to develop private blockchain and create applications for interaction with it.",
+              "what-we-can-4",
+              "Private blockchain-platforms developing")
+              +what-we-can__item(1, "Technical assistance and support",
+              "Ordering our development, you get automatically technical support and access to expert knowledge of our team.",
+              "what-we-can-5",
+              "Technical assistance and support")
+
+
+          .we-work-with.page-block
+            .page-title Our works
+            .we-work-with__container
+              div(align="center")
+                img(src="images/sberbank-ast.png", alt="Sberbank AST -  Simplex software" align="left")
+                div(style="margin-top:50px")
+                    | Sberbank - (automated system for trading) is the largest tendering platform in Russia. We create a system for bidding maintenance in blockchain.
+              br             
+              br
+              br  
+              div
+
+                img(src="images/pajcoin.png", alt="PajCoin - Simplex software" align="left")
+                div
+                  a(href="https://www.pajcoin.com/") PajCoin
+                  |  is a token, provided by assets. Emission is provided by securities, funds, and other assets, belonging to Issuer.
+                           
+              hr(style="height:30pt; visibility:hidden;" )
+              
+
+
+              div(style="margin-top:50px")
+                img(src="images/wheels.png", alt="Автоматизация" align="left") 
+                div                                      
+                    | System for cryptocurrency automation and accounting.
+              br
+
+              div(style="margin-top:50px")
+                img(src="images/wheels.png", alt="Автоматизация" align="left")
+                div
+                    | Telegram bot for currency exchange.
+              br
+
+        form.subscribe-form
+          .subscribe-form__title Contact us by phone +7(499)380-73-75 or send project description to info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Send us email
+
+
+    //= template/footer_en.jade
+
+    //= template/scripts.jade
+

@@ -1,30 +1,28 @@
 doctype html
-html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
+html(xmlns='http://www.w3.org/1999/xhtml' lang="en")
 
-  //= template/head.jade
+  //= template/head_en.jade
 
   body(data-menu="technology")
     #wrapper
 
-      //= template/header.jade
+      //= template/header_en.jade
 
       section.middle.middle-index
 
-        //= template/jumbtrone.jade
+        //= template/jumbtrone_en.jade
 
         .container
           .for-startup
-            .page-title Используемые технологии
+            .page-title Used technologies
             .text-block__text
               p.
-                Не секрет, что успешность реализации проекта (особенно это актуально в условиях, когда нужно уложиться в
-                ограниченный бюджет и сроки) зависит от правильного выбора технологий. Выбор технологий происходит на
-                стадии проектирования.
+                It is no secret that success in project realization (this is particularly relevant under the conditions, when it is necessary to meet limited budget and terms) depends on the right choice of technologies. The choice of technologies takes place at designing stage.
             .text-block
 
             .b-technology__item
               .b-technology__title 
-                .b-technology__type Реляционные базы данных:
+                .b-technology__type Relational databases:
                 .b-technology__name Oracle, Postgresql, Mysql
 
               .b-technology__images
@@ -34,7 +32,7 @@ html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
 
             .b-technology__item
               .b-technology__title 
-                .b-technology__type Нереляционные базы данных:
+                .b-technology__type Non-relational databases:
                 .b-technology__name Hadoop, Cassandra
 
               .b-technology__images
@@ -44,7 +42,7 @@ html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
 
             .b-technology__item
               .b-technology__title 
-                .b-technology__type Языки программирования:
+                .b-technology__type Programming languages:
                 .b-technology__name Java, Javascript, Scala
 
               .b-technology__images
@@ -55,7 +53,7 @@ html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
 
             .b-technology__item
               .b-technology__title 
-                .b-technology__type Фреймворки:
+                .b-technology__type Frameworks:
                 .b-technology__name Spring, Hibernate, JDO, Zkoss, GWT, Wicket, EJB
 
               .b-technology__images
@@ -67,7 +65,7 @@ html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
 
             .b-technology__item
               .b-technology__title
-                .b-technology__type Блокчейн:
+                .b-technology__type Blockchain:
                   .b-technology__name  Ethereum, Solidity, web3j
 
               .b-technology__images
@@ -76,8 +74,8 @@ html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
 
             .b-technology__item
               .b-technology__title
-                .b-technology__type Картографические сервисы:
-                .b-technology__name Яндекс-карты, OpenstreetMap
+                .b-technology__type Map services:
+                .b-technology__name Yandex-maps, OpenstreetMap
 
               .b-technology__images
                 img( src="images/logo_teh17.jpg", alt="img")
@@ -85,8 +83,8 @@ html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
 
             .b-technology__item
               .b-technology__title 
-                .b-technology__type Другие технологии:
-                .b-technology__name Html, Javascript, Xml, веб сервисы
+                .b-technology__type Other:
+                .b-technology__name Html, Javascript, Xml, web-services
 
               .b-technology__images
                 img( src="images/html5.png", width="64px" alt="html5 logo")
@@ -95,9 +93,9 @@ html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
                 img( src="images/web20_logo.png", alt="web 2.0")
 
         form.subscribe-form
-          .subscribe-form__title Свяжитесь с нами по телефону +7(499)380-73-75 или пришлите описание проекта на info@simplex-software.ru
-          button(type="submit" onclick="sendMail();").subscribe-form__submit Написать нам письмо
+          .subscribe-form__title Contact us by phone +7(499)380-73-75 or send project description to info@simplex-software.ru
+          button(type="submit" onclick="sendMail();").subscribe-form__submit Send us email
 
-    //= template/footer.jade
+    //= template/footer_en.jade
 
     //= template/scripts.jade

@@ -21,7 +21,7 @@ mixin we-work-with__item(source, alt)
 
 
 doctype html
-html(xmlns='http://www.w3.org/1999/xhtml')
+html(xmlns='http://www.w3.org/1999/xhtml' lang="ru")
 
   //= template/head.jade
 
@@ -76,8 +76,9 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                 img(src="images/pajcoin.png", alt="PajCoin - Simplex software" align="left")
                 div
                   a(href="https://www.pajcoin.com/") PajCoin
-                  – это токен со стабильной ценой, обеспеченный  ценными бумагами, денежными средствами и другими активами, принадлежащими Эмитенту.
-
+                  | – это токен со стабильной ценой, обеспеченный активами.
+                  | Эмиссия обеспечена ценными бумагами, денежными средствами и другими активами, принадлежащими Эмитенту.
+                           
               hr(style="height:30pt; visibility:hidden;" )
               
 
@@ -85,13 +86,13 @@ html(xmlns='http://www.w3.org/1999/xhtml')
               div(style="margin-top:50px")
                 img(src="images/wheels.png", alt="Автоматизация" align="left") 
                 div                                      
-                    Система для автоматизации и учёта криптовалюты.
+                    | Система для автоматизации и учёта криптовалюты.
               br
 
               div(style="margin-top:50px")
                 img(src="images/wheels.png", alt="Автоматизация" align="left")
                 div
-                    Телеграмм бот для обмена валют.
+                    | Телеграмм бот для обмена валют.
               br
 
         form.subscribe-form
